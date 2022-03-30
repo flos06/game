@@ -1,11 +1,28 @@
 let computerScore = 0
 let playerScore = 0
 
+
 function start() {
+    
  let gamechoice = prompt("Do you want to play Rock, Paper or Scissors?");
  let playerSelection = gamechoice.toLowerCase();
-return playerSelection;
+ if ((playerSelection == "rock") || 
+    (playerSelection =="paper") ||
+    (playerSelection =="scissors")) {
+        return playerSelection;
+    }
+else {
+
+    wrong = ("Wrong input, Please type rock, paper or Scissors only");
+    document.getElementById('wrong').innerHTML = wrong;
+    fail;
+  
+    }
+
 }
+
+
+
 
 function computerPlay(){
     let options = ["rock", "paper", "scissors"]
