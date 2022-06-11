@@ -1,26 +1,10 @@
 let computerScore = 0
 let playerScore = 0
 
-
-function start() {
-    
- let gamechoice = prompt("Do you want to play Rock, Paper or Scissors?");
- let playerSelection = gamechoice.toLowerCase();
- if ((playerSelection == "rock") || 
-    (playerSelection =="paper") ||
-    (playerSelection =="scissors")) {
-        return playerSelection;
-    }
-else {
-
-    wrong = ("Wrong input, Please type rock, paper or Scissors only");
-    document.getElementById('wrong').innerHTML = wrong;
-    fail;
-  
-    }
-
-}
-
+const rock = document.querySelector('#rock');
+rock.addEventListener('click', function() {
+    playRound('rock')
+})
 
 
 
@@ -36,9 +20,9 @@ function game() {
     }
 }
 
-function playRound() {
+function playRound(choice) {
     let computerSelection = computerPlay();
-    let playerSelection = start();
+    let playerSelection = choice;
 
     if ((playerSelection == 'rock' && computerSelection == 'scissors') ||
         (playerSelection == 'paper' && computerSelection == 'rock') ||
@@ -54,7 +38,7 @@ function playRound() {
     }
     else {
         computerScore += 1;
-        result = ('Computer wins! <br><br>'+ playerSelection + " beats " + computerSelection + "<br><br> Player Score: " + playerScore + 'Computer score: ' + computerScore)
+        result = ('Computer wins! <br><br>'+ playerSelection + " loses to  " + computerSelection + "<br><br> Player Score: " + playerScore + 'Computer score: ' + computerScore)
         
     }
     

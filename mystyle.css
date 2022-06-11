@@ -1,0 +1,10 @@
+button {
+    display:inline-block;
+}
+
+#rock {
+    background-image: url(./images/rock.png);
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px
+}
