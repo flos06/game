@@ -6,6 +6,16 @@ rock.addEventListener('click', function() {
     playRound('rock')
 })
 
+const scissors = document.querySelector('#scissors');
+scissors.addEventListener('click', function() {
+    playRound('scissors')
+})
+
+const paper = document.querySelector('#paper');
+paper.addEventListener('click', function() {
+    playRound('paper')
+})
+
 
 
 function computerPlay(){

@@ -8,3 +8,17 @@ button {
     height: 150px;
     width: 150px
 }
+
+#scissors {
+    background-image: url(./images/scissors.png);
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px
+}
+
+#paper {
+    background-image: url(./images/paper.png);
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px
+}
